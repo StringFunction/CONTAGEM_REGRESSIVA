@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import video from "./assets/video.mp4"
 const App = () => {
   const calcularTempoRestante = () => {
     const dataAlvo = new Date("2025-09-01T00:00:00"); // Data de 01/07/2025
@@ -40,7 +40,7 @@ const App = () => {
         muted
         className="absolute inset-0 w-full h-full object-cover"
       >
-        <source src="/public/video.mp4" type="video/mp4" />
+        <source src={video} type="video/mp4" />
         Seu navegador não suporta vídeos.
       </video>
 
