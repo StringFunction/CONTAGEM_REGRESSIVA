@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily : {
-        boa : ["Noto Sans JP"]
+        boa : ["Noto Sans JP"],
+        boa2 : ["Dosis"]
 
       }
     },

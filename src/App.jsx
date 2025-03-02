@@ -32,7 +32,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="text-center p-4 flex flex-col bg-slate-500 h-[100vh] justify-around items-center font-boa">
+    <div className="text-center p-4 flex h-[100vh] justify-around items-center font-boa">
       <div id="video">
       <video
         autoPlay
@@ -45,12 +45,14 @@ const App = () => {
       </video>
 
       </div>
-      <h1 className="text-[80px]  tracking-[16px] italic font-boa "></h1>
-      <div className="flex text-[60px] backdrop-blur-xs absolute justify-center items-center tracking-[5px] p-[50px] shadow-black rounded-[50px] border">
-      <p className="">
-        {tempo.mes} Mês {tempo.semana} Semana {tempo.dias} Dias, {tempo.horas}H {tempo.minutos}M
-      </p>
-      <p className="text-[40px] flex justify-center items-center relative mt-[16px]" > {tempo.segundos <= 9 ? '0'+tempo.segundos : tempo.segundos}s</p>
+   
+      <div className="absolute flex-col text-[45px] gap-5 md:text-[60px] border p-10  rounded-[40px] backdrop-blur-sm  shadow-xl font-boa2 md:flex md:flex-row ">
+      <p className="">{tempo.mes} Mês </p>
+      <p>{tempo.semana} Semana</p>
+      <p>{tempo.dias} Dias</p>
+      <p>{tempo.horas}H</p>
+      <p>{tempo.minutos}M</p>
+      <p className="md:text-[30px] md:flex md:items-end relative -top-3" > {tempo.segundos <= 9 ? '0'+tempo.segundos : tempo.segundos}s</p>
 
       </div>
     </div>
