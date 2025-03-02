@@ -32,21 +32,21 @@ const App = () => {
   }, []);
 
   return (
-    <div className="text-center p-4 flex h-[100vh] justify-around items-center font-boa">
+    <div className="text-center p-4 flex h-[100vh] justify-around items-center font-boa ">
       <div id="video">
       <video
         autoPlay
         loop
         muted
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover "
       >
-        <source src={video} type="video/mp4" />
+        <source src={video} type="video/mp4"  className="blur-sm"/>
         Seu navegador não suporta vídeos.
       </video>
 
       </div>
    
-      <div className="absolute flex-col text-[45px] gap-5 md:text-[60px] border p-10  rounded-[40px] backdrop-blur-sm  shadow-xl font-boa2 md:flex md:flex-row ">
+      <div className="absolute flex-col text-[45px] gap-5 md:text-[60px]  p-10 inset-shadow-indigo-500  rounded-[40px]  backdrop-blur-sm shadow-pers font-boa2 md:flex md:flex-row ">
       <p className="">{tempo.mes} Mês </p>
       <p>{tempo.semana} Semana</p>
       <p>{tempo.dias} Dias</p>

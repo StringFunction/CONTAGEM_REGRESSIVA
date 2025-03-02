@@ -10,6 +10,9 @@ export default {
         boa : ["Noto Sans JP"],
         boa2 : ["Dosis"]
 
+      },
+      boxShadow : {
+        pers :  "61px 21px 87px 13px rgba(0,0,0,0.72)"
       }
     },
   },
